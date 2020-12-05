@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Fisher : MonoBehaviour
 {
+    public int money;
+    public Rod currentRod;
+    public bool hooked;
+    //public Bait
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +19,10 @@ public class Fisher : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("got one");
     }
 }
