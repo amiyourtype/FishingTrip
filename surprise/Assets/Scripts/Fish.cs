@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Fish : MonoBehaviour
 {
+    int rarity;
+    
     // Start is called before the first frame update
     void Start()
     {
