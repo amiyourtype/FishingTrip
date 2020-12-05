@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 355738964}
   - component: {fileID: 355738963}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,10 +213,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 951911809}
   - {fileID: 999222802}
+  - {fileID: 951911809}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -287,7 +287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489344094
 GameObject:
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 489344097}
   - component: {fileID: 489344096}
   m_Layer: 0
-  m_Name: background
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,11 +365,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489344094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 501, y: 339, z: 11}
-  m_LocalScale: {x: 362.50937, y: 362.50937, z: 362.50937}
+  m_LocalPosition: {x: 518.1, y: 348.3, z: 100}
+  m_LocalScale: {x: 377.85754, y: 377.85754, z: 377.85754}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &951911808
 GameObject:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 951911809}
   - component: {fileID: 951911810}
   m_Layer: 0
-  m_Name: _taminaBar
+  m_Name: BarBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,11 +396,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951911808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 380, y: 27, z: 0}
+  m_LocalPosition: {x: 410.00497, y: 69.48798, z: 50}
   m_LocalScale: {x: 22.961493, y: 22.961493, z: 22.961493}
   m_Children: []
   m_Father: {fileID: 355738966}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &951911810
 SpriteRenderer:
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 999222802}
   - component: {fileID: 999222803}
   m_Layer: 0
-  m_Name: bar 1
+  m_Name: BarFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,11 +478,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999222801}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 379.995, y: 7.512, z: 0}
+  m_LocalPosition: {x: 410, y: 50, z: 50}
   m_LocalScale: {x: 18.77436, y: 22.7312, z: 24.37248}
   m_Children: []
   m_Father: {fileID: 355738966}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &999222803
 SpriteRenderer:
@@ -588,7 +588,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 280.59088
+  orthographic size: 290.98624
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -612,11 +612,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131789320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 501.5, y: 282, z: 0}
+  m_LocalPosition: {x: 517.5, y: 291, z: 0}
   m_LocalScale: {x: 1.0712397, y: 1.1060846, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294587593
 GameObject:
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 1294587597}
   - component: {fileID: 1294587598}
   m_Layer: 9
-  m_Name: Jacky
+  m_Name: TestFisher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,8 +713,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294587593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 680.3, y: 287.1, z: -10}
-  m_LocalScale: {x: 30.179201, y: 29.985838, z: 4.465689}
+  m_LocalPosition: {x: 481, y: 287, z: 50}
+  m_LocalScale: {x: 32.945335, y: 32.73425, z: 4.8750005}
   m_Children:
   - {fileID: 1650010269}
   m_Father: {fileID: 0}
@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 2102396953}
   - component: {fileID: 2102396954}
   m_Layer: 8
-  m_Name: Bri'ish Fish
+  m_Name: TestFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -878,8 +878,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102396950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 422, y: 216.9, z: 0}
-  m_LocalScale: {x: 225, y: 225, z: 750.17145}
+  m_LocalPosition: {x: 481, y: 284, z: 10}
+  m_LocalScale: {x: 271.49945, y: 271.49945, z: 905.205}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -898,11 +898,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bloke
   rarity: 3
-  ringRadius: 7
+  ringRadius: 30
   ringSpeed: 0
   stamina: 50
   difficulty: 1
-  speed: 20
+  speed: 500
 --- !u!61 &2102396954
 BoxCollider2D:
   m_ObjectHideFlags: 0
