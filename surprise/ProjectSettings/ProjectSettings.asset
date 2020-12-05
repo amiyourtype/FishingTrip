@@ -555,6 +555,7 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
+  suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   additionalIl2CppArgs: 
@@ -639,10 +640,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: c47e87e1-9d13-47fb-8b2b-ffc1d2475762
+  cloudProjectId: 216702ca-cce3-4381-9348-6da20bad6a8b
   framebufferDepthMemorylessMode: 0
   projectName: surprise
-  organizationId: fylthy_cazual
+  organizationId: normanhaydaer
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
