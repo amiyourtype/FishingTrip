@@ -18,5 +18,5 @@ Not a potato PC
 ## Credits
 **Brian Mei**: Team lead, lead artist, programming.  
 **Jerry Li**: Lead programmer.  
-**Norman**: Programming.  
+**Norman Haydaer**: Programming.  
 **Steve Shi**: Design, writing, programming.
