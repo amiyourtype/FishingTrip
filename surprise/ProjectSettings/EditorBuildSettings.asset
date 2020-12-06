@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FisherTest.unity
     guid: 29f5677a6a5bd46f1b2fced635475977
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: ed48f7909e16849fa8f5e78d1798d66e
   m_configObjects: {}

@@ -20,10 +20,9 @@ public class Play : MonoBehaviour
     {
         time++;
         transform.position = new Vector3(500, 300 + Mathf.Cos(time / factor) * distance);
-    }
-
-    public void ChangeScene(string name)
-    {
-        SceneManager.LoadScene(name);
+        if (Input.GetMouseButtonUp(0))
+        {
+            SceneManager.LoadScene("Game");
+        }
     }
 }
