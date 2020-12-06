@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ticket : Item
 {
     //public int price;
-    public Area area;
+    public int areaID;
     
     /*
     // Start is called before the first frame update
@@ -23,6 +23,6 @@ public class Ticket : Item
 
     public override void buy(Fisher fisher) //Moves player on to the next area
     {
-
+        fisher.thisManager.updatePool(areaID);
     }
 }

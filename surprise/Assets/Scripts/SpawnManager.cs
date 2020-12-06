@@ -35,6 +35,29 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    public void updatePool(int poolID)
+    {
+        if(poolID == 2)
+        {
+            createPool(stageTwoSpawns);
+        }
+        else if(poolID == 3)
+        {
+            createPool(stageThreeSpawns);
+        }
+        else if(poolID == 4)
+        {
+            createPool(stageFourSpawns);
+        }
+        else if(poolID == 5)
+        {
+            createPool(stageFiveSpawns);
+        }
+        makeNewFish();
+        makeNewFish();
+        makeNewFish();
+    }
+
     private void createPool(List<Fish> spawnList)
     {
         pool = new List<Fish>();

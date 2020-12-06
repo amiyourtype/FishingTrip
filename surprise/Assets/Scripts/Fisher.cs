@@ -10,6 +10,7 @@ public class Fisher : MonoBehaviour
     public Fish target; //the fish currently being reeled
     public lastCaught lastCatch;
     public RodInUse rodInUse;
+    public SpawnManager thisManager;
 
     private Vector3 mousepos;
     //public Bait

@@ -21,6 +21,7 @@ public class Fish : MonoBehaviour
     public double bite_time;
     private Vector3 direction;
     private bool hooked;
+    private Shop shop;
 
     private Fisher fisherman;
     private Vector3 mousepos;
@@ -33,6 +34,7 @@ public class Fish : MonoBehaviour
         direction = new Vector3(Random.Range(-10, 11), Random.Range(-10, 11), 0).normalized / 100 * speed;
         hooked = false;
         stamina = 50;
+        shop = GameObject.FindGameObjectWithTag("shop").GetComponent<Shop>();
     }
 
     // Update is called once per frame
@@ -93,7 +95,7 @@ public class Fish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.gameObject.GetComponent<Fisher>().hooked)
+        if(!collision.gameObject.GetComponent<Fisher>().hooked && !shop.shopOpen)
         {
             fisherman = collision.gameObject.GetComponent<Fisher>();
             fisherman.hooked = true;
