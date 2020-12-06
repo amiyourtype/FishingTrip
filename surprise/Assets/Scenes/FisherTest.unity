@@ -523,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951911808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 626.92, y: -3.64, z: 50}
+  m_LocalPosition: {x: 370, y: -65, z: 50}
   m_LocalScale: {x: 20.036766, y: 20, z: 22.961493}
   m_Children:
   - {fileID: 999222802}
@@ -1089,6 +1089,7 @@ MonoBehaviour:
   hooked: 0
   target: {fileID: 0}
   lastCatch: {fileID: 1770700175}
+  rodInUse: {fileID: 0}
 --- !u!50 &1294587598
 Rigidbody2D:
   serializedVersion: 4

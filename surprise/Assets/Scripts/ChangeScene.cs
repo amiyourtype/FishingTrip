@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Play : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
-    public int factor = 21;
-    public int distance = 5;
-    private int time = 0;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +14,10 @@ public class Play : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time++;
-        transform.position = new Vector3(500, 300 + Mathf.Cos(time / factor) * distance);
+        
     }
 
-    public void ChangeScene(string name)
+    public void ChangeSceneFunction(string name)
     {
         SceneManager.LoadScene(name);
     }
