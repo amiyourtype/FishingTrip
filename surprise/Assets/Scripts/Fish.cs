@@ -17,6 +17,7 @@ public class Fish : MonoBehaviour
     public float speed;
     private double swim_time;
     private double wait_time;
+    public double bite_time;
     private Vector3 direction;
     private bool hooked;
 
@@ -27,6 +28,7 @@ public class Fish : MonoBehaviour
     {
         swim_time = Random.Range(15, 30) + difficulty;
         wait_time = Random.Range(300, 500) - difficulty;
+        bite_time = Random.Range(300, 600);
         direction = new Vector3(Random.Range(-10, 11), Random.Range(-10, 11), 0).normalized / 100 * speed;
         hooked = false;
         stamina = 50;
@@ -59,10 +61,11 @@ public class Fish : MonoBehaviour
             transform.position += direction * 2; //change position of fish
             transform.position = (transform.position - fisherman.transform.position) * (float) 0.95 + fisherman.transform.position; //make position drift towards hook
             mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            float dist = Vector3.Distance(transform.position, new Vector3(mousepos.x, mousepos.y, 0));
+            float dist = Vector3.Distance(transform.position, new Vector3(mousepos.x, mousepos.y, 100));
             if (Input.GetMouseButtonUp(0) && dist < ringRadius)
             {
                 stamina -= fisherman.currentRod.efficiency; //done
+                Debug.Log("ow");
             }
             if (stamina <= 0)
             {
@@ -75,8 +78,8 @@ public class Fish : MonoBehaviour
             else if (stamina > 100)
             {
                 Debug.Log("i'm free B)");
-                Destroy(this.gameObject);
                 fisherman.hooked = false;
+                Destroy(this.gameObject);
             }
             swim_time -= 1;
             if (swim_time <= 0)
@@ -93,6 +96,7 @@ public class Fish : MonoBehaviour
         {
             fisherman = collision.gameObject.GetComponent<Fisher>();
             fisherman.hooked = true;
+            fisherman.target = this;
             Debug.Log("ive been hooked :(");
             hooked = true;
         }

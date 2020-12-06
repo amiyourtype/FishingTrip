@@ -32,15 +32,6 @@ public class Fisher : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(!hooked)
-        {
-            Debug.Log("got one");
-            target = collision.gameObject.GetComponent<Fish>();
-        }
-    }
-
     void OnGUI()
     {
         GUI.color = Color.green;
