@@ -60,7 +60,7 @@ public class Fish : MonoBehaviour
             float dist = Vector3.Distance(transform.position, new Vector3(mousepos.x, mousepos.y, 0));
             if (Input.GetMouseButtonUp(0) && dist < ringRadius)
             {
-                stamina -= 30; //change to value of rod
+                stamina -= fisherman.currentRod.efficiency; //done
             }
             if (stamina <= 0)
             {

@@ -30,4 +30,10 @@ public class Fisher : MonoBehaviour
             target = collision.gameObject.GetComponent<Fish>();
         }
     }
+
+    void OnGUI()
+    {
+        GUI.color = Color.green;
+        GUI.Label(new Rect(10,100,100,20), "$" + money.ToString());
+    }
 }
