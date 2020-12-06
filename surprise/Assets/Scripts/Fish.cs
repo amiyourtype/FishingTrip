@@ -7,6 +7,7 @@ public class Fish : MonoBehaviour
     public string name;
     public Sprite trueForm; //what the fish actually looks like
     public int rarity;
+    public int value;
     public float ringRadius;
     public float ringSpeed;
 
@@ -68,6 +69,7 @@ public class Fish : MonoBehaviour
                 Debug.Log("i've been caught >:C");
                 fisherman.hooked = false;
                 fisherman.newCatch();
+                fisherman.money += value;
                 Destroy(this.gameObject); //Destroy(this.line) later
             }
             else if (stamina > 100)
