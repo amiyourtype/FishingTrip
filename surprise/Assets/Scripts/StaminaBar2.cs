@@ -21,5 +21,9 @@ public class StaminaBar2 : MonoBehaviour
         transform.localScale = new Vector3(1,(float)size,1);
         //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
+        else
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 110);
+        }
     }
 }
