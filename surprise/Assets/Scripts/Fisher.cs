@@ -8,6 +8,7 @@ public class Fisher : MonoBehaviour
     public Rod currentRod;
     public bool hooked;
     public Fish target; //the fish currently being reeled
+    public lastCaught lastCatch;
     //public Bait
 
     // Start is called before the first frame update
@@ -34,6 +35,11 @@ public class Fisher : MonoBehaviour
     void OnGUI()
     {
         GUI.color = Color.green;
-        GUI.Label(new Rect(10,100,100,20), "$" + money.ToString());
+        GUI.Label(new Rect(10,100,100,200), "$" + money.ToString());
+    }
+
+    public void newCatch()
+    {
+        lastCatch.updateCatch(target);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fish : MonoBehaviour
 {
     public string name;
+    public Sprite trueForm; //what the fish actually looks like
     public int rarity;
     public float ringRadius;
     public float ringSpeed;
@@ -65,8 +66,9 @@ public class Fish : MonoBehaviour
             if (stamina <= 0)
             {
                 Debug.Log("i've been caught >:C");
-                Destroy(this.gameObject); //Destroy(this.line) later
                 fisherman.hooked = false;
+                fisherman.newCatch();
+                Destroy(this.gameObject); //Destroy(this.line) later
             }
             else if (stamina > 100)
             {

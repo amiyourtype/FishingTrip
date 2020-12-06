@@ -37,7 +37,7 @@ public class mashIcon : MonoBehaviour
                     spriteRenderer.sprite = mash1;
                     animator = true;
                 }
-                timer = 5;
+                timer = 2;
             }
         }
         else
