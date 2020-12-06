@@ -213,7 +213,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 999222802}
   - {fileID: 951911809}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -381,6 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951911809}
   - component: {fileID: 951911810}
+  - component: {fileID: 951911811}
   m_Layer: 0
   m_Name: BarBack
   m_TagString: Untagged
@@ -396,11 +396,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951911808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 410.00497, y: 69.48798, z: 50}
-  m_LocalScale: {x: 22.961493, y: 22.961493, z: 22.961493}
-  m_Children: []
+  m_LocalPosition: {x: 626.92, y: -3.64, z: 50}
+  m_LocalScale: {x: 20.036766, y: 20, z: 22.961493}
+  m_Children:
+  - {fileID: 999222802}
   m_Father: {fileID: 355738966}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &951911810
 SpriteRenderer:
@@ -453,6 +454,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &951911811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951911808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ab66a9bb0944cd5879636aebc39662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fisher: {fileID: 1294587597}
 --- !u!1 &999222801
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999222802}
   - component: {fileID: 999222803}
+  - component: {fileID: 999222804}
   m_Layer: 0
   m_Name: BarFill
   m_TagString: Untagged
@@ -478,10 +493,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999222801}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 410, y: 50, z: 50}
-  m_LocalScale: {x: 18.77436, y: 22.7312, z: 24.37248}
+  m_LocalPosition: {x: -0.029998565, y: -0.099999964, z: 0}
+  m_LocalScale: {x: 0.81021893, y: 0.1, z: 1.06145}
   m_Children: []
-  m_Father: {fileID: 355738966}
+  m_Father: {fileID: 951911809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &999222803
@@ -535,6 +550,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &999222804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999222801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266e9cfca29d54a889d973c17006cc69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  fisher: {fileID: 1294587597}
 --- !u!1 &1131789320
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +964,7 @@ MonoBehaviour:
   money: 0
   currentRod: {fileID: 1650010268}
   hooked: 0
+  target: {fileID: 0}
 --- !u!50 &1294587598
 Rigidbody2D:
   serializedVersion: 4
@@ -1348,10 +1378,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bloke
   rarity: 3
-  ringRadius: 30
+  ringRadius: 90
   ringSpeed: 0
   stamina: 50
-  difficulty: 1
+  difficulty: 0.1
   speed: 500
 --- !u!61 &2102396954
 BoxCollider2D:

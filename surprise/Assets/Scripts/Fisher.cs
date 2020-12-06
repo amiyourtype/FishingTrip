@@ -7,6 +7,7 @@ public class Fisher : MonoBehaviour
     public int money;
     public Rod currentRod;
     public bool hooked;
+    public Fish target; //the fish currently being reeled
     //public Bait
 
     // Start is called before the first frame update
@@ -23,6 +24,16 @@ public class Fisher : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("got one");
+        if(!hooked)
+        {
+            Debug.Log("got one");
+            target = collision.gameObject.GetComponent<Fish>();
+        }
+    }
+
+    void OnGUI()
+    {
+        GUI.color = Color.green;
+        GUI.Label(new Rect(10,100,100,20), "$" + money.ToString());
     }
 }
