@@ -66,11 +66,13 @@ public class Fish : MonoBehaviour
             {
                 Debug.Log("i've been caught >:C");
                 Destroy(this.gameObject); //Destroy(this.line) later
+                fisherman.hooked = false;
             }
             else if (stamina > 100)
             {
                 Debug.Log("i'm free B)");
                 Destroy(this.gameObject);
+                fisherman.hooked = false;
             }
             swim_time -= 1;
             if (swim_time <= 0)
@@ -86,6 +88,7 @@ public class Fish : MonoBehaviour
         if(!collision.gameObject.GetComponent<Fisher>().hooked)
         {
             fisherman = collision.gameObject.GetComponent<Fisher>();
+            fisherman.hooked = true;
             Debug.Log("ive been hooked :(");
             hooked = true;
         }
