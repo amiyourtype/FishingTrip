@@ -22,7 +22,7 @@ public class lastCaught : MonoBehaviour
     void OnGUI()
     {
         GUI.color = Color.yellow;
-        GUI.Label(new Rect(10,300,100,200), "Last caught: " + name);
+        GUI.Label(new Rect(10,530,100,200), "Last caught: " + name);
     }
 
     public void updateCatch(Fish fish)

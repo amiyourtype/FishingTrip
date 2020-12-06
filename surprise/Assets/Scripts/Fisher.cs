@@ -27,7 +27,7 @@ public class Fisher : MonoBehaviour
         if(Input.GetMouseButtonUp(0) && !hooked)
         {
             transform.position = new Vector3(mousepos.x, mousepos.y, 50);
-            Vector3 variability = new Vector3(Random.Range(-150, 160), Random.Range(-150, 160), 50);
+            Vector3 variability = new Vector3(Random.Range(-150, 160), Random.Range(-150, 160), 0);
             transform.position += variability;
         }
     }

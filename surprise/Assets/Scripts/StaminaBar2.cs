@@ -18,7 +18,7 @@ public class StaminaBar2 : MonoBehaviour
         if(fisher.hooked)
         {
         size = fisher.target.stamina/100f * 1.2f;
-        transform.localScale = new Vector3(1,(float)size,1);
+        transform.localScale = new Vector3(1, (float)size, 1);
         //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
         else

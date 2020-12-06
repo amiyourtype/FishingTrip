@@ -15,6 +15,7 @@ public class Fish : MonoBehaviour
 
     public double difficulty;
     public float speed;
+    public double power;
     private double swim_time;
     private double wait_time;
     public double bite_time;
@@ -57,7 +58,7 @@ public class Fish : MonoBehaviour
         }
         else //Code to run for minigame
         {
-            stamina += difficulty / 10;
+            stamina += power;
             transform.position += direction * 2; //change position of fish
             transform.position = (transform.position - fisherman.transform.position) * (float) 0.95 + fisherman.transform.position; //make position drift towards hook
             mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
