@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rod : Item
+public class Ticket : Item
 {
-    public string name;
-    public int efficiency; 
-    //public int price; 
+    //public int price;
+    public Area area;
+    
     /*
     // Start is called before the first frame update
     void Start()
@@ -21,8 +21,8 @@ public class Rod : Item
     }
     */
 
-    public override void buy(Fisher fisher) //Equips this rod on player
+    public override void buy(Fisher fisher) //Moves player on to the next area
     {
-        fisher.currentRod = this;
+
     }
 }

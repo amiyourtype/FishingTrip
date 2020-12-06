@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rod : Item
+public class Item : MonoBehaviour
 {
-    public string name;
-    public int efficiency; 
-    //public int price; 
-    /*
+    public int price;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +16,9 @@ public class Rod : Item
     {
         
     }
-    */
 
-    public override void buy(Fisher fisher) //Equips this rod on player
+    public virtual void buy(Fisher fisher)
     {
-        fisher.currentRod = this;
+        //do something
     }
 }
