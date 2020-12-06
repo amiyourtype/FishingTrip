@@ -60,4 +60,18 @@ public class Shop : MonoBehaviour
             }
         }
     }
+
+    void OnGUI()
+    {
+        if(shopOpen)
+        {
+            GUI.color = Color.yellow;
+            int xPos = 10;
+            foreach(GameObject item in inventory)
+            {
+                GUI.Label(new Rect(xPos,200,100,200), "$" + item.GetComponent<Item>().price);
+                xPos += 100;
+            }
+        }
+    }
 }
