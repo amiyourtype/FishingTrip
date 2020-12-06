@@ -10,6 +10,8 @@ public class Fisher : MonoBehaviour
     public Fish target; //the fish currently being reeled
     public lastCaught lastCatch;
     public RodInUse rodInUse;
+
+    private Vector3 mousepos;
     //public Bait
 
     // Start is called before the first frame update
@@ -21,7 +23,13 @@ public class Fisher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if(Input.GetMouseButtonUp(0) && !hooked)
+        {
+            transform.position = new Vector3(mousepos.x, mousepos.y, 50);
+            Vector3 variability = new Vector3(Random.Range(-150, 160), Random.Range(-150, 160), 50);
+            transform.position += variability;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
