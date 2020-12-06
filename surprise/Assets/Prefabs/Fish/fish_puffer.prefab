@@ -105,8 +105,9 @@ MonoBehaviour:
   stamina: 50
   difficulty: 0.1
   speed: 50
-  power: 0.01
+  power: 1
   bite_time: 0
+  spriteRenderer: {fileID: 4746613623004178730}
 --- !u!61 &4746613623004178728
 BoxCollider2D:
   m_ObjectHideFlags: 0

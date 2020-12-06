@@ -7,6 +7,8 @@ public class Ticket : Item
     //public int price;
     public int areaID;
     public Fisher fisher;
+    public Shop shop;
+    public Shop newShop;
     /*
     // Start is called before the first frame update
     void Start()
@@ -24,5 +26,7 @@ public class Ticket : Item
     public override void buy(Fisher fisher) //Moves player on to the next area
     {
         fisher.thisManager.updatePool(areaID);
+        shop.closeShop();
+        shop.inventory = newShop.inventory;
     }
 }

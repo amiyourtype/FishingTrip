@@ -99,14 +99,15 @@ MonoBehaviour:
   name: Cardinalfish
   trueForm: {fileID: 21300000, guid: baad93f732d636641a63fb5231c6fdc1, type: 3}
   rarity: 2
-  value: 2000
+  value: 41
   ringRadius: 90
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
-  speed: 70
-  power: 0.04
+  speed: 90
+  power: 1.1
   bite_time: 0
+  spriteRenderer: {fileID: 368631502115686334}
 --- !u!61 &368631502115686332
 BoxCollider2D:
   m_ObjectHideFlags: 0

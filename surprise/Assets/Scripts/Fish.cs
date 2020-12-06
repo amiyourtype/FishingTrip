@@ -19,6 +19,9 @@ public class Fish : MonoBehaviour
     private double swim_time;
     private double wait_time;
     public double bite_time;
+
+    public SpriteRenderer spriteRenderer;
+
     private Vector3 direction;
     private bool hooked;
     private Shop shop;
@@ -102,7 +105,16 @@ public class Fish : MonoBehaviour
             fisherman.target = this;
             Debug.Log("ive been hooked :(");
             hooked = true;
+            spriteRenderer.sprite = trueForm;
         }
     }
 
+    void OnGUI()
+    {
+        if (hooked)
+        {
+            GUI.color = Color.yellow;
+            GUI.Label(new Rect(300,10,100,200), "Stamina: " + ((int)stamina).ToString());
+        }
+    }
 }

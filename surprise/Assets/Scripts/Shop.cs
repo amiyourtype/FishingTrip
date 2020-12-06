@@ -28,11 +28,7 @@ public class Shop : MonoBehaviour
             {
                 if(shopOpen)
                 {
-                    shopOpen = false;
-                    foreach(GameObject item in inventory)
-                    {
-                        item.transform.position = new Vector3(item.transform.position.x, item.transform.position.y, 110);
-                    }
+                    closeShop();
                 }
                 else
                 {
@@ -48,7 +44,7 @@ public class Shop : MonoBehaviour
                 foreach(GameObject item in inventory)
                 {
                     dist = Vector3.Distance(item.transform.position, new Vector3(mousepos.x, mousepos.y, 0));
-                    if(dist < radius)
+                    if(dist < 300)
                     {
                         if(item.GetComponent<Item>().price <= fisher.money)
                         {
@@ -61,6 +57,15 @@ public class Shop : MonoBehaviour
         }
     }
 
+    public void closeShop()
+    {
+        shopOpen = false;
+        foreach(GameObject item in inventory)
+        {
+            item.transform.position = new Vector3(item.transform.position.x, item.transform.position.y, 110);
+        }
+    }
+
     void OnGUI()
     {
         if(shopOpen)
@@ -70,7 +75,7 @@ public class Shop : MonoBehaviour
             foreach(GameObject item in inventory)
             {
                 GUI.Label(new Rect(xPos,200,100,200), "$" + item.GetComponent<Item>().price);
-                xPos += 100;
+                xPos += 200;
             }
         }
     }

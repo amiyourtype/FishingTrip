@@ -1084,12 +1084,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e809b051e0ba6094cbd8225f5de5294e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 300
+  money: 0
   currentRod: {fileID: 1650010268}
   hooked: 0
   target: {fileID: 0}
   lastCatch: {fileID: 1770700175}
   rodInUse: {fileID: 0}
+  thisManager: {fileID: 0}
 --- !u!50 &1294587598
 Rigidbody2D:
   serializedVersion: 4
@@ -1730,6 +1731,9 @@ MonoBehaviour:
   stamina: 50
   difficulty: 0.1
   speed: 500
+  power: 0
+  bite_time: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &2102396954
 BoxCollider2D:
   m_ObjectHideFlags: 0

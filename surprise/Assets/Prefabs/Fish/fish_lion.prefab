@@ -99,14 +99,15 @@ MonoBehaviour:
   name: Lionfish
   trueForm: {fileID: 21300000, guid: 04a8ad327108e0247baacede5684be89, type: 3}
   rarity: 5
-  value: 2000
+  value: 31
   ringRadius: 90
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
-  speed: 50
-  power: 0.01
+  speed: 70
+  power: 1.1
   bite_time: 0
+  spriteRenderer: {fileID: 377733335166455260}
 --- !u!61 &377733335166455262
 BoxCollider2D:
   m_ObjectHideFlags: 0

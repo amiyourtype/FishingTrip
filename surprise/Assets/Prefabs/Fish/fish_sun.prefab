@@ -99,14 +99,15 @@ MonoBehaviour:
   name: Sunfish
   trueForm: {fileID: 21300000, guid: 9ba5a74c9c47bbe4a9e7c0efd282d566, type: 3}
   rarity: 6
-  value: 2000
+  value: 11
   ringRadius: 90
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
   speed: 50
-  power: 0.01
+  power: 1
   bite_time: 0
+  spriteRenderer: {fileID: 1260914612856211066}
 --- !u!61 &1260914612856211068
 BoxCollider2D:
   m_ObjectHideFlags: 0

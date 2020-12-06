@@ -99,14 +99,15 @@ MonoBehaviour:
   name: Boxfish
   trueForm: {fileID: 21300000, guid: 36245cdd7e7bddd40b72dee1d50b2fd3, type: 3}
   rarity: 4
-  value: 2000
+  value: 26
   ringRadius: 90
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
   speed: 50
-  power: 0.01
+  power: 0.8
   bite_time: 0
+  spriteRenderer: {fileID: 7915182037415766222}
 --- !u!61 &7915182037415766216
 BoxCollider2D:
   m_ObjectHideFlags: 0

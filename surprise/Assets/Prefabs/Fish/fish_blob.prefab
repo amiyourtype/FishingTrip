@@ -104,9 +104,10 @@ MonoBehaviour:
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
-  speed: 50
-  power: 0.01
+  speed: 1
+  power: 2
   bite_time: 0
+  spriteRenderer: {fileID: 1516181171875296777}
 --- !u!61 &1516181171875296791
 BoxCollider2D:
   m_ObjectHideFlags: 0

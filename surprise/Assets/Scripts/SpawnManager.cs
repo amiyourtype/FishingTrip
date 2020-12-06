@@ -19,16 +19,17 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         createPool(stageOneSpawns);
-        makeNewFish();
-        makeNewFish();
-        makeNewFish();
+        for(int i = 0; i < maxFish; i++)
+        {
+            makeNewFish();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         timer++;
-        if (timer > spawnTime && currentFish.Count < maxFish)
+        if (timer > spawnTime)
         {
             timer -= spawnTime;
             makeNewFish();
@@ -73,7 +74,7 @@ public class SpawnManager : MonoBehaviour
     {
         Fish fish = Instantiate(pool[Random.Range(0, pool.Count)]);
         //fish.transform.position = new Vector3(Random.Range(-10, 11), Random.Range(-10, 11), 0);
-        fish.transform.position = new Vector3(Random.Range(0, 1001), Random.Range(0, 1001), 100);
+        fish.transform.position = new Vector3(Random.Range(0, 1001), Random.Range(0, 563), 50);
         currentFish.Add(fish);
     }
 }

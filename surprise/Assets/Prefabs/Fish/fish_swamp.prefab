@@ -99,14 +99,15 @@ MonoBehaviour:
   name: Swampfish
   trueForm: {fileID: 21300000, guid: 2c23bac897176664f9e3c3f4e170bc30, type: 3}
   rarity: 4
-  value: 2000
+  value: 9
   ringRadius: 90
   ringSpeed: 0
   stamina: 50
   difficulty: 0.1
   speed: 50
-  power: 0.01
+  power: 0.4
   bite_time: 0
+  spriteRenderer: {fileID: 1565738353600449218}
 --- !u!61 &1565738353600449216
 BoxCollider2D:
   m_ObjectHideFlags: 0
