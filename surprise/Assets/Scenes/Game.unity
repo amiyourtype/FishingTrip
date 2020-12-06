@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 450
   name: Challenger Rod
-  efficiency: 9
+  efficiency: 30
   sprite: {fileID: 21300000, guid: c07311ee147981c41879795e754a26bd, type: 3}
 --- !u!4 &382735768
 Transform:
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 100
   name: Expert Rod
-  efficiency: 7
+  efficiency: 20
   sprite: {fileID: 21300000, guid: c07311ee147981c41879795e754a26bd, type: 3}
 --- !u!1 &1043755689
 GameObject:
@@ -968,7 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 30
   name: Starter Rod
-  efficiency: 5
+  efficiency: 10
   sprite: {fileID: 21300000, guid: 4bcd361d30496394d8179591dc629bb5, type: 3}
 --- !u!4 &1043755692
 Transform:
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 160
   name: Grand Rod
-  efficiency: 8
+  efficiency: 25
   sprite: {fileID: 21300000, guid: c07311ee147981c41879795e754a26bd, type: 3}
 --- !u!1 &1347984842
 GameObject:
@@ -2460,7 +2460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 60
   name: Reinforced Rod
-  efficiency: 6
+  efficiency: 15
   sprite: {fileID: 21300000, guid: c07311ee147981c41879795e754a26bd, type: 3}
 --- !u!1 &1882154940
 GameObject:
