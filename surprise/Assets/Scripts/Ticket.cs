@@ -6,7 +6,7 @@ public class Ticket : Item
 {
     //public int price;
     public int areaID;
-    
+    public Fisher fisher;
     /*
     // Start is called before the first frame update
     void Start()
