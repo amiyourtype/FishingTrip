@@ -9,6 +9,7 @@ public class Fisher : MonoBehaviour
     public bool hooked;
     public Fish target; //the fish currently being reeled
     public lastCaught lastCatch;
+    public RodInUse rodInUse;
     //public Bait
 
     // Start is called before the first frame update
@@ -41,5 +42,10 @@ public class Fisher : MonoBehaviour
     public void newCatch()
     {
         lastCatch.updateCatch(target);
+    }
+
+    public void newRod()
+    {
+        rodInUse.updateRod(currentRod);
     }
 }

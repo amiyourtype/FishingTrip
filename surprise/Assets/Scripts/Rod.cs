@@ -6,6 +6,7 @@ public class Rod : Item
 {
     public string name;
     public int efficiency; 
+    public Sprite sprite;
     //public int price; 
     /*
     // Start is called before the first frame update
@@ -24,5 +25,6 @@ public class Rod : Item
     public override void buy(Fisher fisher) //Equips this rod on player
     {
         fisher.currentRod = this;
+        fisher.newRod();
     }
 }
